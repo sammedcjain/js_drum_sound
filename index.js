@@ -55,3 +55,10 @@ function anim(j){
   document.querySelector("."+j).classList.add("pressed");
   setTimeout(function(){document.querySelector("."+j).classList.remove("pressed")},100);
 }
+document.querySelector(".form-control").addEventListener("keydown",animkey)
+
+function animkey()
+{
+document.querySelector(".form-control").classList.add("pressed");
+setTimeout(function(){document.querySelector(".form-control").classList.remove("pressed")},100);
+}
